@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="LiteRtLm.NET.Android/LiteRtLm.NET.Android.csproj" />
+  <Project Path="LiteRtLm.NET.Tests/LiteRtLm.NET.Tests.csproj" />
+  <Project Path="LiteRtLm.NET/LiteRtLm.NET.csproj" />
+</Solution>

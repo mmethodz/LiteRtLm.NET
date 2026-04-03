@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>26</SupportedOSPlatformVersion>
+    <RootNamespace>LiteRtLm.NET.Android</RootNamespace>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LiteRtLm.NET\LiteRtLm.NET.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidMavenLibrary Include="com.google.ai.edge.litertlm:litertlm-android"
+                         Version="0.10.0"
+                         Repository="Google" />
+    <AndroidLibrary Include="libs\LiteRtLmInterop-release.aar" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GoogleGson" Version="2.13.2" />
+    <PackageReference Include="Xamarin.Kotlin.Reflect" Version="2.2.21" />
+    <PackageReference Include="Xamarin.KotlinX.Coroutines.Android" Version="1.9.0" />
+  </ItemGroup>
+</Project>

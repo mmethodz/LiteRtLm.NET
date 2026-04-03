@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <RootNamespace>LiteRtLm.NET</RootNamespace>
+    <PackageId>LiteRtLm.NET</PackageId>
+    <Version>0.1.0-alpha</Version>
+    <Authors>AiMk</Authors>
+    <Copyright>Copyright (c) 2026 AiMk</Copyright>
+    <Description>Cross-platform C# interfaces and models for on-device LLM inference via Google AI Edge LiteRT-LM. Model-agnostic, task-agnostic infrastructure layer.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/AiMk/LiteRtLm.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AiMk/LiteRtLm.NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>litert-lm litert llm on-device inference gemma maui ai google edge</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.5" />
+    <PackageReference Include="PolySharp" Version="1.15.0" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" Condition="Exists('..\README.md')" />
+  </ItemGroup>
+</Project>
